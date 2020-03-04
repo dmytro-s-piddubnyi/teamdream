@@ -1,0 +1,33 @@
+.controls {
+  display: flex;
+  padding: var(--grid-step);
+  border-bottom: 1px solid var(--main-background-contrast-border);
+
+  .search {
+    width: 100%;
+    padding: var(--grid-step);
+  }
+
+  .btn-add {
+    display: inline-block;
+    background: var(--btn);
+    color: var(--btn-color);
+    width: 54px;
+    height: 54px;
+    min-width: 54px;
+    max-width: 54px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 34px;
+    margin-left: var(--grid-step);
+  }
+}
+
+.list {
+
+}
+
+.task {
+  padding: 8px var(--grid-step);
+  border-bottom: 1px solid var(--main-background-contrast-border);
+}

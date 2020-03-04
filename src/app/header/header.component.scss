@@ -1,0 +1,13 @@
+:host {
+  background: var(--header);
+  color: var(--header-contrast);
+  padding: var(--grid-step);
+
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.logo {
+  text-transform: uppercase;
+}
