@@ -1,0 +1,14 @@
+version: '3'
+services:
+  database:
+    image: 'mongo'
+    # container_name: 'mongodb'
+    environment:
+      - MONGO_INITDB_DATABASE='teamdream'
+      - MONGO_INITDB_ROOT_USERNAME=supersecureadminuser
+      - MONGO_INITDB_ROOT_PASSWORD=pass1234
+    volumes: 
+      - ./db/init.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - ./db/data:/data/db
+    ports:
+      - '27017-27019:27017-27019'
